@@ -71,11 +71,11 @@ body{
 	}
 	.nav__ul{
 		position: absolute;
-		top: -100%;
-		display: none;
-		float: none;
+		display: block;
 		width:100vw;
-
+		transform: scale(1,0);
+		transform-origin: top;
+		transition: transform 400ms ease-in-out;
 	}
 	.nav__ul-li{
 		margin:0;
@@ -94,8 +94,7 @@ body{
 		background-color: var(--color-secundario);
 	}
 	#check:checked ~ .nav__ul{
-		top: 50px;
-		display: block
+		transform:scale(1,1);
 	}
 	.nav__ul-boton{
 		display: inline-block;
