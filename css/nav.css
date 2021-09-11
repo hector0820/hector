@@ -80,8 +80,8 @@ body{
 	.nav__ul-li{
 		margin:0;
 		text-align: center;
-		color: var(--color-principal);
-		background-color: var(--color-fondo);
+		color: var(--color-terciario);
+		background-color: var(--color-secundario);
 	}
 	#seleccionado{
 	background-color: black;
@@ -91,7 +91,7 @@ body{
 		right: 0%;
 	}
 	#check:checked ~ .nav__ul-boton{
-		background-color: var(--color-fondo);
+		background-color: var(--color-secundario);
 	}
 	#check:checked ~ .nav__ul{
 		top: 50px;
