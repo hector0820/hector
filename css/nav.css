@@ -24,8 +24,8 @@ body{
 }
 /* Logo */
 .nav__h1{
-	padding: 7.5px;
-	font-size: 28px;
+	padding: 6px 10px 11px; 
+	font-size: 26px;
 	font-family: 'Caveat', cursive;
 	display: inline-block;
 	color: white;
