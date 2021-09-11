@@ -1,4 +1,5 @@
 /* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 /* Limpiando configuraciones del explorador */
 *{
@@ -23,8 +24,9 @@ body{
 }
 /* Logo */
 .nav__h1{
-	padding: 6px;
-	font-size: 25px;
+	padding: 7.7px;
+	font-size: 28px;
+	font-family: 'Caveat', cursive;
 	display: inline-block;
 	color: white;
 }
@@ -48,3 +50,7 @@ body{
 	background-color:#f1a649 ;
 	color: black;
 }
+/* Especiales */
+#seleccionado{
+	background-color: #882720}
+

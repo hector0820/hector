@@ -13,6 +13,7 @@
 }
 .cuerpo__encabezado{
 	text-align: center;
+	font-family: 'Caveat', cursive;
 	margin-bottom: -10px;
 	font-size: 38px;
 	grid-area: encabezado;
