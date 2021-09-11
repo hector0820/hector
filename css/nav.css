@@ -1,6 +1,13 @@
 /* Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+/* Variables */
+:root{
+	--color-fondo: #f1a649;
+	--color-principal: black;
+	--color-secundario: #882720;
+	--color-terciario: white;
+}
 /* Limpiando configuraciones del explorador */
 *{
 	padding:0;
@@ -10,11 +17,11 @@
 	list-style: none;
 }
 body{
-	background-color: #f1a649;
+	background-color: var(--color-fondo);
 	font-family: 'Poppins', sans-serif;
 }
 .nav{
-	background-color: black;
+	background-color: var(--color-principal);
 	position: -webkit-sticky; /* Safari */
 	position: sticky;
 	top: 0;
@@ -31,7 +38,7 @@ body{
 	color: white;
 }
 .nav__h1:hover{
-	background-color:#f1a649 ;
+	background-color:var(--color-fondo);
 	color: black;
 }
 /* Opciones - Páginas */
@@ -47,10 +54,55 @@ body{
 	padding: 13px;
 }
 .nav__ul-li:hover{
-	background-color:#f1a649 ;
-	color: black;
+	background-color: var(--color-fondo);
+	color: var(--color-principal);
+}
+/* Boton para barra celular*/
+.nav__ul-boton{display:none}
+#check{
+	display:none;
 }
 /* Especiales */
-#seleccionado{
-	background-color: #882720}
+#seleccionado{background-color:#882720}
+#seleccionado:hover{color:var(--color-fondo)}
+@media (max-width: 720px){
+	.nav{
+	background-color: black;
+	}
+	.nav__ul{
+		position: absolute;
+		top: -100%;
+		display: none;
+		float: none;
+		width:100vw;
+
+	}
+	.nav__ul-li{
+		margin:0;
+		text-align: center;
+		color: var(--color-principal);
+		background-color: var(--color-fondo);
+	}
+	#seleccionado{
+	background-color: black;
+	}
+	#check{
+		position: absolute;
+		right: 0%;
+	}
+	#check:checked ~ .nav__ul-boton{
+		background-color: var(--color-fondo);
+	}
+	#check:checked ~ .nav__ul{
+		top: 50px;
+		display: block
+	}
+	.nav__ul-boton{
+		display: inline-block;
+		position: absolute;
+		right: 0%;
+		padding: 12px 14px 16px;
+		color: white;
+	}
+}
 
