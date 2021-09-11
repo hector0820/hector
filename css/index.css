@@ -19,12 +19,12 @@
 	grid-area: encabezado;
 }
 .cuerpo__foto-img{
-	height: 35vw;
+	height: 33vw;
 	border-radius: 7px;
 	grid-area: foto;
 }
 .cuerpo__contenido{
-	height: 35vw;
+	height: 33vw;
 	padding-bottom: 15px;
 	overflow-y: auto;
 	overflow-x: hidden;
@@ -57,6 +57,9 @@
 	     }
 	.cuerpo__encabezado{
 		font-size: 23px;
+	}
+	.cuerpo__contenido{
+		height: 65vh;
 	}
      }
 
