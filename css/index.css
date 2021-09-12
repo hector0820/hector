@@ -50,6 +50,9 @@
 		width: 80vw;
 		height: 60vh;
 	}
+	.cuerpo__contenido p{
+		font-size: 14px;
+	}
 	.cuerpo{
 	grid-template-areas: "encabezado"
 			     "foto"
