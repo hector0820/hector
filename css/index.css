@@ -1,34 +1,31 @@
-/* Scroll bar */
-.cuerpo > ::-webkit-scrollbar { display: none}
-.cuerpo > ::-webkit-scrollbar-thumb { background: white; }
-.cuerpo > :hover::-webkit-scrollbar {
-	transition: opacity 250ms;
-	display: initial;
-	width: 1px;
+/* 
   }
+  */
 .cuerpo__contenido p{
 	text-align: justify;
-	font-size: 23px;
+	font-size: 14px;
+	padding: 0 5vw;
 	margin-bottom: 15px;
 }
 .cuerpo__encabezado{
+	font-size: 23px;
 	text-align: center;
 	font-family: 'Caveat', cursive;
 	margin-bottom: -10px;
-	font-size: 38px;
 	grid-area: encabezado;
 }
 .cuerpo__foto-img{
-	height: 33vw;
+	width: 85vw;
+	height: 70vh;
+	border: 7px solid white;
 	border-radius: 7px;
 	grid-area: foto;
 }
 .cuerpo__contenido{
-	height: 33vw;
+	height: fit-content;
 	padding: 2px 18px 15px;
-	overflow-y: auto;
-	overflow-x: hidden;
 	grid-area:contenido;
+	overflow: hidden;
 }
 .footer{
 	background-color: black;
@@ -37,34 +34,54 @@
 	grid-area: footer;
 }
 .cuerpo{
-	margin: 30px;
 	display: grid;
-	grid-gap: 20px;
+	grid-gap: 10px;
 	justify-items: center;
-	grid-template-areas: "encabezado encabezado"
-			     "foto contenido"
-			     "footer footer";
+	grid-template-areas: "encabezado" "foto" "contenido" "footer";
 }
-@media (max-width: 760px){
+@media (min-width: 720px){
+	.cuerpo{
+		grid-template-areas: "encabezado encabezado" "foto contenido" "footer footer";
+	}
+	.cuerpo__encabezado{
+		margin-bottom: .3rem;
+	}
 	.cuerpo__foto-img{
-		width: 80vw;
-		height: 60vh;
+		height: 70vh;
+		width: 35vw;
+	}
+	.cuerpo__contenido{
+		margin: -.3rem 0 5vh -10vw;
+		padding: 0;
+		width: 45vw;
+		height: 70vh;
+		overflow-y: auto;
+	}
+	.cuerpo__contenido p{
+		padding: .2rem 0;
+	}
+	.cuerpo__contenido::-webkit-scrollbar { width: 2px}
+	.cuerpo__contenido::-webkit-scrollbar-track { background: #f1f1f1; }
+	.cuerpo__contenido::-webkit-scrollbar-thumb { background: #888; }
+	.cuerpo__contenido::-webkit-scrollbar-thumb:hover { background: #555; }
+}
+@media (min-width: 990px){
+	.cuerpo__foto-img{
+		width: 25vw;
+	}
+	.cuerpo__contenido{
+		width: 55vw;
 	}
 	.cuerpo__contenido p{
 		font-size: 14px;
+		margin-bottom: 7px;
 	}
-	.cuerpo{
-	grid-template-areas: "encabezado"
-			     "foto"
-			     "contenido"
-			     "footer";
-	     }
-	.cuerpo__encabezado{
-		font-size: 23px;
-	}
-	.cuerpo__contenido{
-		height: 65vh;
-	}
-     }
+
+
+
+
+
+
+
 
 

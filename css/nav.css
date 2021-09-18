@@ -19,7 +19,8 @@
 body{
 	background-color: var(--color-fondo);
 	font-family: 'Poppins', sans-serif;
-}
+	overflow-y: auto;
+	}
 .nav{
 	background-color: var(--color-principal);
 	position: -webkit-sticky; /* Safari */
@@ -67,6 +68,12 @@ body{
 #seleccionado{
 	padding-bottom: 16px;
 	background-color: var(--color-fondo);
+}
+.p-b-dois{
+	color: var(--color-secundario);
+}
+.p-b-tres{
+	color: var(--color-terciario);
 }
 @media (max-width: 720px){
 	.nav{
