@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Héctor Hernández</title>
+	<!--link rel="icon" type="image/png" sizes="32x32" href="images/icono/icono.jpg"-->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/nav.css">
+	<link rel="stylesheet" href="css/footer.css">
+	<link rel="stylesheet" href="css/contato.css">
+	<script src="https://kit.fontawesome.com/ddb4ba07c4.js" crossorigin="anonymous"></script>
+</head>
+<body >
+	<nav class="nav">
+		<a href="index.html"><h1 class="nav__h1">Habla Conmigo</h1></a>
+				<input type="checkbox" id="check"><label for="check" class="nav__ul-boton"><i class="fa fa-bars"></i></label>
+		<ul class="nav__ul">
+				<a class="nav__ul-a" href="index.html"><li class="nav__ul-li">Aulas</li></a>
+				<a class="nav__ul-a"  href="mim.html"><li class="nav__ul-li">Sobre mim</li></a>
+				<a class="nav__ul-a" href="#"><li id="seleccionado" class="nav__ul-li">Contato</li></a>
+		</ul>
+	</nav>
+
+	<div class="contatopg">
+		<div class="contatopg__titulo">
+			<h1 class="contatopg__titulo-h1">Contato</h1>
+			<p class="contatopg__titulo-p"> Se você estiver interesado nas aulas, ou que saber mais, convido você me deixar suas dúvidas aqui embaixo. <b class="p-b-tres">No caso que você quiser</b>, pode apertar o icono do <b class="p-b-dois">What's app</b>  ou do <b class="p-b-dois">e-mail</b> para me mandar uma mensagem desde seu aplicativo preferido.</p>
+		</div>
+		<div class="contatopg__iconos">
+			<div class="contatopg__iconos-wh">
+				<a class="contatopg__iconos-wh _contatogpicono" href="https://wa.me/qr/JXGFT5GPRWUGN1"><i class="fab fa-whatsapp"></i></a></div>
+			<div class="contatopg__iconos-twh">
+				<a class="contatopg__iconos-twh _contatogptext" href="https://wa.me/qr/JXGFT5GPRWUGN1">5562194933</a></div>
+			<div class="contatopg__iconos-ml">
+				<a class="contatopg__iconos-ml _contatogpicono" href="mailto:hector.hdez.08@gmail.com"><i class="far fa-envelope"></i></a></div>
+			<div class="contatopg__iconos-tml">
+				<a class="contatopg__iconos-tml _contatogptext" href="mailto:hector.hdez.08@gmail.com"><p>hector.hdez.08@gmail.com</a></p></div>
+		</div>
+
+		<div class="contatopg__formulario">
+			<h2 class="contatopg__formulario-h2">Habla conmigo</h2>
+			<form name="gform" id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/1McaOn8RScdZ4qiitEp2Co7e1KVMe_sJgZf5kMGCjoVk/formResponse?" target="hidden_iframe" onsubmit="submitted=true;">
+				<div class="contatopg__formulario-texto"><p class="contatopg__formulario-texto-p">Nome</p></div>
+				<div class="contatopg__formulario-texto"><input class="contatopg__formulario-texto-i" type="text" name="entry.1151589646" id="entry.1151589646" required><br></div>
+				<div class="contatopg__formulario-texto"><p class="contatopg__formulario-texto-p">E-mail</p></div>
+				<div class="contatopg__formulario-texto"><input class="contatopg__formulario-texto-i" type="email" name="entry.1153801090" id="entry.1153801090" required></div>
+				<div class="contatopg__formulario-texto"><p class="contatopg__formulario-texto-p">Mensagem</p></div>
+				<div class="contatopg__formulario-texto"><textarea class="contatopg__formulario-texto-i _mensajede" name="entry.2038131097" id="entry.2038131097"></textarea></div>
+				<div class="contatopg__formulario-texto-boton"><input id="_enviar" type="submit" value="Enviar"></div>
+			</form>
+			<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
+			<script type="text/javascript">
+			    document.getElementById("_enviar").onclick = function () {
+				    alert("Sua mensagem tem sido enviada.");
+			    };
+			</script>
+		</div>
+		<footer id="contato" class="footer">
+			<p class="contato__footer-p"></p>
+		</footer>
+	</div>
+</body>
+</html>
