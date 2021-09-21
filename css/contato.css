@@ -19,19 +19,19 @@
 .contatopg__titulo-p{
 	font-size: 1.2rem;
 	text-align: justify;
-	padding-bottom: 1.5rem;
-	border-bottom: 1px solid var(--color-principal);
+	padding-bottom: .5rem;
 }
 .contatopg__iconos{
 	grid-area:iconos;
 	display: grid;
 	margin: .5rem 0;
-	padding-bottom: 1rem;
+	padding: .5rem 0 1rem;
 	width: 90vw;
 	grid-template-columns: 1fr 1fr;
 	grid-template-areas:"pg-wh pg-ml" "pg-twh pg-tml";
 	text-align: center;
-	border-bottom: 1px solid var(--color-principal);
+	border-top: 3px solid var(--color-principal);
+	border-bottom: 3px solid var(--color-principal);
 }
 .contatopg__iconos-wh{
 	grid-area:pg-wh;
@@ -57,7 +57,8 @@
 .contatopg__formulario{
 	grid-area:formulario;
 	width: 90vw;
-	margin: .5rem ;
+	margin: .5rem;
+	margin-bottom: 1rem;
 	padding: .5rem 3vw;
 	border-radius: 7px;
 	border: 3px inset var(--color-principal);
@@ -80,7 +81,6 @@
 	border-color: var(--color-principal);
 }
 .footer{
-	height: 18vh;
 	grid-area:footer;
 }
 ._mensajede{
@@ -97,24 +97,27 @@
 	border-radius: 7px;
 	font-weight: bolder;
 }
-/*
 @media (min-width: 720px){
-	body{
-		font-size: 20px;
-	}
 	.contatopg{
 		grid-template-areas:"titulo titulo" "formulario iconos"  "footer footer" ;
 	}
 	.contatopg__titulo{
-		width: 80vw;
+		padding: 0 10vw;
+		margin-bottom: 0;
+	}
+	.contatopg__titulo-p{
+		padding-bottom: 0;
+		margin-bottom: 0;
 	}
 	.contatopg__iconos{
-		width: 39vw;
-		height: 30vh;
-		margin: 3vw auto 0 0;
+		width: 33vw;
+		margin: 1.3rem 7vw 2rem 1rem;
 		align-items: center;
-		grid-template-columns: 1fr 2fr;
-		grid-template-areas:"pg-wh pg-twh" "pg-ml pg-tml";
+		grid-template-columns: 1fr 3fr;
+		grid-template-areas:". ." ". ." "pg-wh pg-twh" "pg-ml pg-tml" ". ." ". .";
+		/*
+		margin: 3vw auto 0 0;
+		*/
 	}
 	.contatopg__iconos-twh,
 	.contatopg__iconos-tml{
@@ -122,17 +125,21 @@
 	}
 	.contatopg__formulario{
 		width: 33vw;
-		height: 60vh;
-		margin: 1.3rem 1rem 2rem 5rem;
+		padding: .5rem 1.5vw;
+		margin: 1.3rem 1rem 2rem 5vw;
 		margin-top: 1.3rem;
+	}
+	.contatopg__formulario-texto-i{
+		width: 30vw;
 	}
 	.contatopg__formulario-texto{
 		width: 30vw;
 	}
 	._contatogpicono{
-		font-size: 3.4rem;
+		font-size: 2.4rem;
 	}
 	._contatogptext{
-		font-size: 1.5rem;
+		font-size: 1.1rem;
 	}
+}
 
