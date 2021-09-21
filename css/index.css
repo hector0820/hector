@@ -1,6 +1,9 @@
+<<<<<<< HEAD
+=======
 /* 
   }
   */
+>>>>>>> b5380b3a7f5e0cc26ac56ed738286c16bcf18595
 .cuerpo__contenido p{
 	text-align: justify;
 	font-size: 14px;
@@ -26,6 +29,8 @@
 	padding: 2px 18px 15px;
 	grid-area:contenido;
 	overflow: hidden;
+<<<<<<< HEAD
+=======
 }
 .footer{
 	grid-area: footer;
@@ -69,6 +74,7 @@
 .footer__correo{
 	display: none;
 	grid-area: ft_cr;
+>>>>>>> b5380b3a7f5e0cc26ac56ed738286c16bcf18595
 }
 .cuerpo{
 	display: grid;
@@ -112,6 +118,9 @@
 	.cuerpo__contenido p{
 		font-size: 14px;
 		margin-bottom: 7px;
+<<<<<<< HEAD
+	}
+=======
 	}
 	.footer{
 		grid-gap: 0;
@@ -155,4 +164,6 @@
 
 
 
+>>>>>>> b5380b3a7f5e0cc26ac56ed738286c16bcf18595
 
+}
