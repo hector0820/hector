@@ -74,3 +74,39 @@
 	border-radius: 7px;
 	font-weight: bolder;
 }
+@media (min-width: 950px){
+	.contatopg{
+		grid-template-areas: "cnta_ttulo cnta_ttulo" "cnta_formularios cnta_iconos";
+		}
+	.contatopg__formulario{
+		width: 90%;
+		height: 60vh;
+		margin-top: .9rem;
+		margin-right: auto;
+	}
+	.contatopg__formulario-texto{
+		width: 96%;
+		margin: auto;
+	}
+	._mensajede{
+		height: 23vh;
+		}
+	.contatopg__formulario-texto-boton{
+		text-align: center;
+		margin-top: .7rem;
+	}
+	.contatopg__iconos{
+		margin: 0 0 0 4rem; 
+		padding: 0; 
+		width: 90%;
+		text-align: left;
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr 1fr 1fr 2fr;
+		grid-template-areas:"." "ml_" "wh_" ".";
+		border: 0;
+		}
+	._contatogpicono,
+	._contatogptext{
+		display: inline-block;
+		font-size: 1.8rem;
+		}

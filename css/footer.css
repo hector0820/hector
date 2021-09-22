@@ -56,6 +56,12 @@
 	.footer__whats,
 	.footer__mail{
 		width:20px; 
+		margin-top: .2rem;
+		margin-left: auto;
+		margin-right: .5rem;
+	}
+	.footer__mail{
+		margin-right: .6rem;
 	}
 	.footer__correo,
 	.footer__numero{
@@ -72,5 +78,6 @@
 	._ftcontenido{
 		font-size: 1rem;
 		color: var(--color-um);
+	}
 }
 
