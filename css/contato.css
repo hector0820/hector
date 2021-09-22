@@ -22,6 +22,8 @@
 	text-align: center;
 	grid-template-columns: 1fr 1fr;
 	grid-template-areas:"wh_ ml_";
+	border-top: 2px inset gray;
+	border-bottom: 2px inset gray;
 	}
 .contatopg__iconos-ml{
 	font-size: 3.5rem;
