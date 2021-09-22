@@ -18,7 +18,7 @@
 .contatopg__iconos{
 	grid-area: cnta_iconos; 
 	display: grid;
-	margin: 4.5rem 0;
+	margin: 3.5rem 0;
 	text-align: center;
 	grid-template-columns: 1fr 1fr;
 	grid-template-areas:"wh_ ml_";
