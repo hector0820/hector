@@ -1,0 +1,65 @@
+.sobremim{
+	display: grid;
+	grid-gap: 1rem;
+	grid-template-areas:"sb_tt" "sb_ft" "sb_pr";
+	overflow-x: hidden;
+	}
+.sobremim__titulo{
+	grid-area:sb_tt;
+	font-family: "Caveat";
+	text-align: center;
+	}
+.sobremim__titulo-h1{
+	font-size: 2.5rem;
+	}
+
+.sobremim__foto{
+	grid-area:sb_ft;
+	text-align: center;
+	}
+.sobremim__foto-img{
+	width: 80vw; 
+	border: 9px solid var(--color-terciario);
+	border-radius: 7px;
+	}
+.sobremim__presentacion{
+	grid-area:sb_pr;
+	width: 77vw; 
+	margin: 0 auto 2rem;
+	text-align: justify;
+	}
+.sobremim__presentacion p{
+	margin-bottom: 1rem;
+	}
+@media (min-width: 950px){
+	.sobremim{
+		display: grid;
+		grid-gap: 1rem;
+		grid-template-areas:"sb_tt sb_tt" "sb_ft sb_pr";
+		overflow-x: hidden;
+		}
+	.sobremim__foto-img{
+		width: 28vw; 
+		height: 75vh;
+		}
+	.sobremim__presentacion{
+		width: 50vw;
+		height: 75vh;
+		padding-right: 1rem;
+		overflow-y: auto;
+		}
+	.sobremim__presentacion::-webkit-scrollbar {
+		width: .3rem;
+		}
+	.sobremim__presentacion::-webkit-scrollbar-track {
+		box-shadow: inset 0 0 5px grey; 
+		border-radius: 1rem;
+		}
+	.sobremim__presentacion::-webkit-scrollbar-thumb {
+		background: var(--color-secundario); 
+		border-radius: 1rem;
+		}
+	.sobremim__presentacion::-webkit-scrollbar-thumb:hover {
+		background: #b30000; 
+		}
+	}

@@ -1,21 +1,20 @@
 /* Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-/* Variables */
+
 :root{
 	--color-fondo: #f1a649;
 	--color-principal: black;
 	--color-secundario: #882720;
 	--color-terciario: white;
-}
-/* Limpiando configuraciones del explorador */
+	}
 *{
 	padding:0;
 	margin:0;
 	box-sizing:border-box;
 	text-decoration:none;
 	list-style: none;
-}
+	}
 body{
 	background-color: var(--color-fondo);
 	font-family: 'Poppins', sans-serif;
@@ -29,8 +28,7 @@ body{
 	width: 100%;
 	height: 50px;
 	margin-bottom: 15px;
-}
-/* Logo */
+	}
 .nav__h1{
 	background-color: var(--color-secundario);
 	padding: 6.2px 10px 11px; 
@@ -38,43 +36,42 @@ body{
 	font-family: 'Caveat', cursive;
 	display: inline-block;
 	color: white;
-}
+	}
 .nav__h1:hover{
 	background-color:var(--color-fondo);
 	color: black;
-}
-/* Opciones - Páginas */
+	}
 .nav__ul{
 	display: flex;
 	float: right;
 	text-align: center;
 	font-size: 16px;
 	text-align: 1;
-}
+	}
 .nav__ul-li{
 	color: white;
 	padding: 12px 15px 13px;
-}
+	}
 .nav__ul-li:hover{
 	background-color: var(--color-secundario);
 	color: var(--color-principal);
-}
-/* Boton para barra celular*/
-.nav__ul-boton{display:none}
+	}
+.nav__ul-boton{
+	display:none
+	}
 #check{
 	display:none;
-}
-/* Especiales */
+	}
 #seleccionado{
-	padding-bottom: 16px;
+	padding: 12px 15px 13px;
 	background-color: var(--color-fondo);
-}
+	}
 .p-b-dois{
 	color: var(--color-secundario);
-}
+	}
 .p-b-tres{
 	color: var(--color-terciario);
-}
+	}
 @media (max-width: 720px){
 	.nav{
 	background-color: var(--color-principal);
@@ -85,7 +82,7 @@ body{
 	.nav__ul{
 		position: absolute;
 		display: block;
-		width:100vw;
+		width: 100%;
 		transform: scale(1,0);
 		transform-origin: top;
 		transition: transform 400ms ease-in-out;
@@ -112,6 +109,10 @@ body{
 		right: 0%;
 		padding: 12px 14px 16px;
 		color: white;
+	}
+	#seleccionado{
+		border-top: 2px inset var(--color-principal);
+		border-bottom: 2px inset var(--color-principal);
 	}
 }
 

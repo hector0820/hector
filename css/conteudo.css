@@ -1,0 +1,15 @@
+.conteudo{
+	width: 100%;
+	}
+.conteudo__conteudo{
+	width: 85%;
+	margin: auto;
+	}
+@media (min-width: 950px){
+	.conteudo__conteudo{
+		width: 90%;
+		height: 89.3vh;
+		margin: 0 auto;
+		overflow-y: hidden;
+	}
+}
