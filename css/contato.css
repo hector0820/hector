@@ -18,12 +18,13 @@
 .contatopg__iconos{
 	grid-area: cnta_iconos; 
 	display: grid;
-	margin: 3.5rem 0;
+	margin: 2.5rem 0;
+	padding: 1rem 0;
 	text-align: center;
 	grid-template-columns: 1fr 1fr;
 	grid-template-areas:"wh_ ml_";
-	border-top: 2px inset gray;
-	border-bottom: 2px inset gray;
+	border-top: 2px solid gray;
+	border-bottom: 2px solid gray;
 	}
 .contatopg__iconos-ml{
 	font-size: 3.5rem;
