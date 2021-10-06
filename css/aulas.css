@@ -1,0 +1,69 @@
+.aulas{
+	display: grid;
+	grid-gap: 15px;
+	grid-template-areas: "aulatt" "aulaintr" "aulaft" "aulapre";
+}
+.aulas__titulo{
+	font-family:"Caveat";
+	font-size: 1.8rem;
+	text-align: center;
+	grid-area: aulatt;
+	width: 100%;
+}
+.aulas__intro{
+	grid-area: aulaintr;
+	font-style: italic;
+	color: var(--color-terciario);
+}
+.aulas__foto{
+	grid-area: aulaft;
+}
+.aulas__foto-img{
+	width: 100%;
+	border-radius: 10px;
+}
+.aulas__presentacion{
+	width: 98%;
+	margin: auto;
+	grid-area: aulapre;
+}
+.aulas__presentacion p{
+	text-align: justify;
+	margin-bottom: 1rem;
+}
+@media (min-width: 950px){
+.aulas{
+	grid-gap: 18px;
+	grid-template-areas: "aulatt aulatt" "aulaintr aulaintr" "aulapre aulaft";
+}
+.aulas__intro{
+	margin: auto;
+	font-size: 1.2rem;
+}
+.aulas__foto-img{
+	height: 67vh;
+}
+.aulas__presentacion p{
+	font-size: 1.2rem;
+}
+.aulas__presentacion{
+	height: 60vh;
+	padding-right: 1rem;
+	overflow-y: auto;
+}
+.aulas__presentacion::-webkit-scrollbar {
+	width: .3rem;
+	}
+.aulas__presentacion::-webkit-scrollbar-track {
+	box-shadow: inset 0 0 5px grey; 
+	border-radius: 1rem;
+	}
+.aulas__presentacion::-webkit-scrollbar-thumb {
+	background: var(--color-secundario); 
+	border-radius: 1rem;
+	}
+.aulas__presentacion::-webkit-scrollbar-thumb:hover {
+	background: #b30000; 
+	}
+}
+
